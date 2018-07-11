@@ -1,0 +1,23 @@
+# Java path config
+export JAVA_HOME=/usr/lib/jvm/jdk1.8
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+# hadoop path config
+export HADOOP_HOME=/usr/local/hadoop
+export LIB_NATIVE_DIR=$HADOOP_HOME/lib/native  
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
+##
+# hbase path config
+export HBASE_HOME=/usr/local/hbase
+##
+# zookeeper path config
+export ZOOKEEPER_HOME=/usr/local/zookeeper
+##
+# kafka path config
+export KAFKA_HOME=/usr/local/kafka
+##
+#hive path config
+export HIVE_HOME=/usr/local/hive
+##
+
+export PATH=${HIVE_HOME}/bin:${HIVE_HOME}/conf:${KAFKA_HOME}/bin:${ZOOKEEPER_HOME}/bin:${JAVA_HOME}/bin:/usr/local/cuda-9.1/bin:${HADOOP_HOME}/bin:${HADOOP_HOME}/sbin:${HBASE_HOME}/bin:$PATH
