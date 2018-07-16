@@ -1,0 +1,9 @@
+sudo apt-get install mysql-server
+
+sudo apt install mysql-client
+
+sudo apt install libmysqlclient-dev
+
+sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+
+update user set host='%' where user='root';
